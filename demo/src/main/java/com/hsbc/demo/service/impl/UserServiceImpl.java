@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.*;
 
-import static com.hsbc.demo.data.storage.*;
+import static com.hsbc.demo.data.Storage.*;
 
 @Service
 public class UserServiceImpl implements UserService {
