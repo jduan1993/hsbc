@@ -1,0 +1,309 @@
+{
+	"info": {
+		"_postman_id": "5778f2a5-5097-400e-9438-b10e1f70f852",
+		"name": "hsbc",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create User 122",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"userName\":\"122\",\"password\":\"r1\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/demo/user/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"demo",
+						"user",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Role r1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"roleName\":\"r1\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/demo/role/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"demo",
+						"role",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Role r2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"roleName\":\"r2\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/demo/role/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"demo",
+						"role",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Role r3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"roleName\":\"r3\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/demo/role/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"demo",
+						"role",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Role r1 to User 122",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"userName\":\"122\",\"roleName\":\"r1\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/demo/user/add-role",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"demo",
+						"user",
+						"add-role"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Role r2 to User 122",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"userName\":\"122\",\"roleName\":\"r2\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/demo/user/add-role",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"demo",
+						"user",
+						"add-role"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Role r3 to User 122",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"userName\":\"122\",\"roleName\":\"r3\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/demo/user/add-role",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"demo",
+						"user",
+						"add-role"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Auth User 122",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"userName\":\"122\",\"password\":\"r1\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/demo/user/auth",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"demo",
+						"user",
+						"auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check Role r1 for User 122",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"token\":\"MTIyN2M5MmNmMWVlZThkOTljYzg1ZjgzNTVhM2Q2ZTRiODY=\",\"roleName\":\"r1\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/demo/role/check",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"demo",
+						"role",
+						"check"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All Role for User 122",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"token\":\"MTIyN2M5MmNmMWVlZThkOTljYzg1ZjgzNTVhM2Q2ZTRiODY=\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/demo/role/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"demo",
+						"role",
+						"all"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
